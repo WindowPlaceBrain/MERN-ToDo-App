@@ -9,6 +9,8 @@
     "server": "node server.js",
     "client": "vite",
     "dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "build": "vite build",
+    "preview": "vite preview",
     "start": "node server.js"
   },
   "keywords": [],
