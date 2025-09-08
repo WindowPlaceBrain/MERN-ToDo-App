@@ -10,7 +10,7 @@ const app = express()
 // CORS Konfiguration für Vercel Frontend
 const corsOptions = {
   origin: [
-    'https://https://mern-to-do-app-six.vercel.app', // Deine Vercel Frontend URL
+    process.env.FRONTEND_URL || 'https://mern-to-do-app-six.vercel.app', // Deine Vercel Frontend URL
     'http://localhost:3000', // Für lokale Entwicklung
     'http://localhost:5173', // Für Vite Dev Server
   ],

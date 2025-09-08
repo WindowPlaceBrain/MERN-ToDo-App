@@ -2,8 +2,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL:
-    import.meta.env.VITE_API_URL || 'https://mern-to-do-app-six.vercel.app',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
 })
 
 export const fetchTodos = () => api.get('/todos')
